@@ -1,0 +1,74 @@
+---
+title: "Developing Data Products Assignment 1"
+author: "Alana Souter"
+date: "24 November 2017"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+##Popular Scottish Castles##
+```{r chunk1}
+library(leaflet)
+```
+
+```{r map1}
+leaflet() %>% addTiles() %>%
+  addMarkers(
+    lng = -3.1999, lat = 55.9486,
+    label = "Edinburgh Castle") %>%
+  addMarkers(
+    lng = -3.9474, lat = 56.1238,
+    label = "Stirling Castle") %>%
+  addMarkers(
+    lng = -3.9474, lat = 56.1238,
+    label = "Stirling Castle")%>%
+  addMarkers(
+    lng = -3.2292, lat = 57.0397,
+    label = "Balmoral Castle")%>%
+  addMarkers(
+    lng = -3.0017, lat = 56.6202,
+    label = "Glamis Castle")%>%
+  addMarkers(
+    lng = -3.3194, lat = 57.0147,
+    label = "Braemar Castle")%>%
+  addMarkers(
+    lng = -5.0736, lat = 56.2374,
+    label = "Inveraray Castle")%>%
+  addMarkers(
+    lng = -5.5162, lat = 57.2739,
+    label = "Eilean Donan Castle")%>%
+  addMarkers(
+    lng = -3.9266, lat = 57.5243,
+    label = "Cawdor Castle")%>%
+  addMarkers(
+    lng = -3.8456, lat = 56.7670,
+    label = "Blair Castle")%>%
+  addMarkers(
+    lng = -2.1972, lat = 56.9458,
+    label = "Dunnottar Castle")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
